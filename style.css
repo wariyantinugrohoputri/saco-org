@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+	font-family: 'poppins';
+	font-weight: 300;
+}
+
+h1{
+	font-size: 60px;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+p{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.btn{
+	width: 150px;
+	height: 50px;
+}
+
+
+.navbar{
+	background-color: white;
+}
+
+.navbar img{
+	width: 100px;
+}
+
+.navbar a{
+	font-weight: 400;
+}
+
+#beranda{
+	background-image: url(asset/img/beranda-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+.beranda-items{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 80px;
+	margin-bottom: 200px;
+}
+
+.beranda-items button{
+	border-style: none;
+	color: white;
+}
+
+.beranda-items .btn1{
+	background-color: #B0693F;
+}
+
+.beranda-items .btn1:hover{
+	background-color: transparent;
+	border: 3px solid #B0693F;
+	color: white;
+	transition: 1s;
+}
+
+.beranda-items .btn2{
+	background-color: transparent;
+	border: 3px solid #B0693F;
+}
+
+.beranda-items .btn2:hover{
+	background-color: #B0693F;
+	color: white;
+	transition: 1s;
+}
+
+.dog-img{
+	margin-top: -150px;
+}
+
+
+
+#tentang{
+	background-color: #B0693F;
+	color: white;
+	margin-top: -43px;
+	position: relative;
+}
+
+#tentang p{
+	width: 829px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.btn-kepengurusan{
+	border: 3px solid white;
+	color: white;
+}
+
+.btn-kepengurusan:hover{
+	background-color: white;
+	color: #B0693F;
+}
+
+
+
+#galeri{
+	background-image: url(asset/img/galeri-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin-top: 150px;
+}
+
+#artikel{
+	padding: 100px 0 150px 0;
+}
+
+.artikel-image{
+	height: 400px;
+}
+
+.artikel-items b{
+	font-weight: 600;
+}
+
+.artikel-detail a{
+	color: #80B800;
+}
+
+.artikel-detail img{
+	margin-left: 9px;
+}
+
+
+#kontak{
+	background-image: url(asset/img/beranda-bg.svg);
+	color: white;
+}
+#kontak img{
+	margin-right: 20px;
+}
+
+/*.icon-kontak a img{
+	margin-right: 30px;
+}*/
+
+
+footer{
+	background-color: #B0693F;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*File artikel-list*/
+#judul-halaman{
+	background-image: url(asset/img/beranda-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+
+
+/*File kepengurusan*/
+.beranda-items h1{
+	font-size: 40px;
+}
+
+.kotak{
+	height: 150px;
+	background-color: #B0693F;
+	position: relative;
+	margin-top: -70px;
+}
+
+
+
+
+
+/*mobile*/
+@media (max-width: 575.98px) {
+	/*File index*/
+	h1{
+		font-size: 35px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	p{
+		font-size: 13px;
+	}
+
+	.artikel-image{
+		height: 300px;
+	}
+
+	.artikel-items img{
+		margin-right: 10px;
+		width: 40px;
+	}
+
+	.artikel-new{
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+/*tablet*/
+@media (max-width: 991.98px) {
+	/*File index*/
+	.artikel-items h3{
+		padding-top: 30px;
+	}
+
+
+	/*File artikel detail*/
+	.judul-image{
+		margin-bottom: 20px;
+	}
+
+	.judul-detail img{
+		padding-right: 10px;
+	}
+}
+
+
+#judul-halaman{
+	background-image: url(asset/img/beranda-bg.svg);
+	color: white;
+}
+
+
+
+
+
+
+
+/*galeri*/
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
