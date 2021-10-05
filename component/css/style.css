@@ -45,7 +45,7 @@ a{
 }
 
 #beranda{
-	background-image: url(asset/img/beranda-bg.svg);
+	background-image: url(../../asset/img/beranda-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
